@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+.body {
+  margin: 0 auto;
+  height: 95.6vh;
+  background-color: rgb(138, 134, 53);
+  color: white;
+  font-family: "Chakra Petch", system-ui;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+  padding-top: 30px;
+  text-shadow: 0px 0px 7px rgb(109, 104, 41);
+}
+.container {
+  margin: 0 auto;
+  color: rgb(172, 125, 136);
+  min-width: 600px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px rgb(109, 104, 41);
+  padding: 40px;
+}
+.select_container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.select {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: rgb(138, 134, 53);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px rgb(109, 104, 41);
+  font-family: "Chakra Petch", system-ui;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px dashed rgb(138, 134, 53);
+}
+.city:last-child {
+  border: none;
+}
+h2 {
+  margin: 0 0 5px;
+  font-size: 26px;
+}
+.date {
+  opacity: 0.7;
+}
+.time {
+  font-size: 48px;
+}
+.time small {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+footer {
+  padding-top: 100px;
+  text-shadow: 0px 0px 7px rgb(109, 104, 41);
+}
+a {
+  font-weight: 600;
+  color: rgb(222, 182, 171);
+}

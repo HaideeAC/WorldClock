@@ -86,7 +86,3 @@ a {
   font-weight: 600;
   color: rgb(222, 182, 171);
 }
-
-a:hover {
-  cursor: pointer;
-}

@@ -1,4 +1,16 @@
 function updateTime() {
+  let londonElement = document.querySelector("#london");
+  if (londonElement) {
+    let londonDateElement = londonElement.querySelector(".date");
+    let londonTimeElement = londonElement.querySelector(".time");
+    let londonTime = moment().tz("Europe/London");
+
+    londonDateElement.innerHTML = londonTime.format("MMMM Do YYYY");
+    londonTimeElement.innerHTML = londonTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
   let losAngelesElement = document.querySelector("#losangeles");
   if (losAngelesElement) {
     let losAngelesDateElement = losAngelesElement.querySelector(".date");
@@ -11,18 +23,6 @@ function updateTime() {
     );
   }
 
-  let lisbonElement = document.querySelector("#lisbon");
-  if (lisbonElement) {
-    let lisbonDateElement = lisbonElement.querySelector(".date");
-    let lisbonTimeElement = lisbonElement.querySelector(".time");
-    let lisbonTime = moment().tz("Europe/Lisbon");
-
-    lisbonDateElement.innerHTML = lisbonTime.format("MMMM Do YYYY");
-    lisbonTimeElement.innerHTML = lisbonTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
-  }
-
   let tokyoElement = document.querySelector("#tokyo");
   if (tokyoElement) {
     let tokyoDateElement = tokyoElement.querySelector(".date");
@@ -31,18 +31,6 @@ function updateTime() {
 
     tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
     tokyoTimeElement.innerHTML = tokyoTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
-  }
-
-  let luandaElement = document.querySelector("#luanda");
-  if (luandaElement) {
-    let luandaDateElement = luandaElement.querySelector(".date");
-    let luandaTimeElement = luandaElement.querySelector(".time");
-    let luandaTime = moment().tz("Africa/Luanda");
-
-    luandaDateElement.innerHTML = luandaTime.format("MMMM Do YYYY");
-    luandaTimeElement.innerHTML = luandaTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }

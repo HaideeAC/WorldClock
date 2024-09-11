@@ -50,7 +50,9 @@ h1 {
   font-style: normal;
   font-size: 15px;
 }
-
+.select:hover {
+  cursor: pointer;
+}
 
 .city {
   display: flex;
@@ -83,4 +85,8 @@ footer {
 a {
   font-weight: 600;
   color: rgb(222, 182, 171);
+}
+
+a:hover {
+  cursor: pointer;
 }

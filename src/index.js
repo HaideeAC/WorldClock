@@ -75,6 +75,11 @@ function updateCity(event) {
           )}</div>
         </div>
   `;
+
+    let createButton = document.querySelector("#button");
+    createButton.innerHTML = `
+  <a href="home">Back</a>
+  `;
   }
   updateCityTime();
   window.cityInterval = setInterval(updateCityTime, 1000);

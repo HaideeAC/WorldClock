@@ -78,7 +78,7 @@ function updateCity(event) {
 
     let createButton = document.querySelector("#button");
     createButton.innerHTML = `
-  <a href="home">Back</a>
+  <a href="/">Back</a>
   `;
   }
   updateCityTime();
